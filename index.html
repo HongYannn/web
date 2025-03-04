@@ -89,6 +89,36 @@
             margin-top: 10px;
             line-height: 1.6;
         }
+
+        /* 遊戲區域 */
+        .game-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .game-container p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .apple-images {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .apple-images img {
+            width: 15%;
+            height: auto;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -125,8 +155,32 @@
 
     <!-- 文字 Box（填滿寬度） -->
     <div class="text-box">
-        <h2>歡迎來到 Apple Music</h2>
-        <p>在這裡探索最新的音樂、專輯和播放列表，享受極致的音樂體驗。</p>
+        <h2>沒錢買Apple，只好買apples</h2>
+        <p>在這裡購買最新鮮的蘋果。</p>
     </div>
+
+    <!-- 遊戲區域 -->
+    <div class="game-container">
+        <button onclick="buyApple()">買蘋果</button>
+        <p>你已經買了 <span id="apple-count">0</span> 顆蘋果</p>
+        <div class="apple-images" id="apple-images"></div>
+    </div>
+
+    <script>
+        let appleCount = 0;
+        let appleImage;
+
+        function buyApple() {
+            appleCount++;
+            document.getElementById('apple-count').innerText = appleCount;
+
+            if (!appleImage) {
+                appleImage = document.createElement('img');
+                appleImage.src = 'C:/Users/schoo/Desktop/web/webpractice/snow-white-apple-gif.gif';
+                appleImage.alt = 'Apple Image';
+                document.getElementById('apple-images').appendChild(appleImage);
+            }
+        }
+    </script>
 </body>
 </html>
