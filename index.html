@@ -1,186 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Music-like Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>歐印行李箱</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css">
 
-        body {
-            background-color: var(--ribbon-background-color);
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header 樣式 */
-        header {
-            background-color: #fff;
-            padding: 10px 60px;
-        }
-
-        /* 讓 header 內容（logo、menu、搜尋）排成一行 */
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        /* Logo */
-        .logo img {
-            width: 80px;
-        }
-
-        /* 導覽列樣式 */
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            margin-right: 35px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        /* 搜尋框 */
-        .search-box {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            border-radius: 20px;
-            background-color: #f1f1f1;
-        }
-
-        .search-box input {
-            border: none;
-            outline: none;
-            background: transparent;
-            padding: 5px;
-        }
-
-        /* 文字 Box（填滿整個畫面） */
-        .text-box {
-            width: 100%;
-            min-height: 300px; /* 讓它有足夠的高度 */
-            padding: 50px 20px;
-            background-color: #f8f8f8;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* 讓內容垂直置中 */
-            align-items: center;
-        }
-
-        .text-box h2 {
-            font-size: 36px;
-            color: #333;
-        }
-
-        .text-box p {
-            font-size: 18px;
-            color: #666;
-            max-width: 800px;
-            margin-top: 10px;
-            line-height: 1.6;
-        }
-
-        /* 遊戲區域 */
-        .game-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .game-container button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .game-container p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        .apple-images {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .apple-images img {
-            width: 15%;
-            height: auto;
-            margin: 10px;
-        }
-    </style>
 </head>
+
 <body>
-    <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="pngimg.com - apple_logo_PNG19688.png" alt="Logo">
+    <div class="header">
+
+        <div class="logo">
+            <a href="#top" >
+                <img src="UNIQLO.svg" alt="UNIQLO" width="170px">
+            </a>
+        </div>
+
+        <!-- 中間 -->
+        <!-- <div class="nav"> -->
+            <!-- <div class="menu-item">
+                <a href="#">新品上市 ⌵</a>
+                <div class="dropdown">
+                    <a href="#">最新活動</a>
+                    <a href="#">本月推薦</a>
+                </div>
             </div>
 
-            <!-- 選單 -->
-            <nav>
-                <ul>
-                    <li>商店</li>
-                    <li>Mac</li>
-                    <li>iPad</li>
-                    <li>iPhone</li>
-                    <li>Watch</li>
-                    <li>Vision</li>
-                    <li>AirPods</li>
-                    <li>TV和家庭</li>
-                    <li>娛樂</li>
-                    <li>配件</li>
-                    <li>支援服務</li>
-                </ul>
-            </nav>
+            <div class="menu-item">
+                <a href="#">商品分類 ⌵</a>
+                <div class="dropdown">
+                    <a href="#">登機箱 20吋以下</a>
+                    <a href="#">中型箱 21-24吋</a>
+                    <a href="#">大型箱 25-28吋</a>
+                    <a href="#">超大型箱 28吋以上</a>
+                </div>
+            </div>
 
-            <!-- 搜尋框 -->
-            <div class="search-box">
-                <input type="text" placeholder="Search">
+            <div class="menu-item">
+                <a href="#">關於歐印 ⌵</a>
+                <div class="dropdown">
+                    <a href="#">品牌故事</a>
+                    <a href="#">企業合作</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <a href="#">常見問題 ⌵</a>
+                <div class="dropdown">
+                    <a href="#">購物說明</a>
+                    <a href="#">維修保固</a>
+                    <a href="#">QA</a>
+                </div>
+            </div> -->
+        <!-- </div> -->
+
+
+
+
+        <!-- 右側 -->
+        <div class="right-area">
+            <!-- <div class="search-box">
+                <input type="text" placeholder="請輸入關鍵字">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
+
+            <div class="icons">
+                <div style="position: relative;">
+                    <a href="login.html">
+                        <i class="fa-solid fa-user" style="color:#333"></i>
+                    </a>
+                </div>
+                <div style="position: relative;" >
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping" style="color:#333"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </header>
 
-    <!-- 文字 Box（填滿寬度） -->
-    <div class="text-box">
-        <h2>沒錢買Apple，只好買apples</h2>
-        <p>在這裡購買最新鮮的蘋果。</p>
     </div>
 
-    <!-- 遊戲區域 -->
-    <div class="game-container">
-        <button onclick="buyApple()">買蘋果</button>
-        <p>你已經買了 <span id="apple-count">0</span> 顆蘋果</p>
-        <div class="apple-images" id="apple-images"></div>
-    </div>
+    <div class="range">
+        <div class="flex-container">
+            <div class="container1">
+            <div class="login-box-text" >
+                <h2>會員登入</h2>
+            </div>
+            <div class="login-box">
+            <form action="login.php" method="post">
+                <label for="email">電子郵件地址</label>
+                <div class="h-text-box">
+                    <i class="icon left icon-user"></i>
+                    <input type="email" id="email" name="email" placeholder="請輸入電子郵件" autocomplete="off" required>
+                </div>
+                <p id="Error" class="error-msg" style="display: none;">請輸入電子郵件。</p>
 
+                <label for="password">密碼</label>
+                <div class="h-text-box">
+                    <i class="icon left icon-password"></i>
+                    <input type="password" id="password" name="password" maxlength="20" placeholder="請輸入 8-20 位數密碼" autocomplete="off" required>
+                </div>
+                <p id="Error" class="error-msg" style="display: none;">請輸入密碼。</p>
+
+                <div class="actions">
+                    <label style="margin-top:0px;">
+                        <input type="checkbox" id="showPassword"> 顯示輸入密碼
+                    </label>
+                    <a class="change" href="#">忘記密碼／修改密碼</a>
+                </div>
+                <button type="submit" style="background-color:black;">登入</button>
+            </form>
+            </div>
+            </div>
+            <div class="container2">
+                <h2>加入UNQILO會員</h2>
+                <a href="registerpage.html">
+                    <button style="background-color:black; height:52px;">註冊</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="h-footer">
+        <div class="h-component h-custom h-clearfix h-content">
+            <div class="footer">
+                <div class="footer-inner" >
+                    <div class="footer-line">
+                        <a href="test.php">會員登入</a>
+                        <a href="#">關於歐印</a>
+                        <a href="#">常見問題</a>
+                        <a href="https://policies.google.com/privacy?hl=zh-TW">隱私權政策</a>
+                        <a href="https://policies.google.com/terms?hl=zh-TW">服務條款</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/legendwalkertaiwan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://line.me/R/ti/p/_idjyEv115" target="_blank"><i class="fab fa-line"></i></a>
+                        <a href="https://www.instagram.com/all_en.boutique/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/legendwalker6000" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>歐印精品 all-en Boutique 電話 04-2291-4216 郵件 info@all-en.com.tw
+                    </p>
+                    <p>Copyright 2011 all-en Taiwan Ltd. All rights reserved
+                    </p>
+                    <!-- <div class="footer-line">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        let appleCount = 0;
-        let appleImage;
-
-        function buyApple() {
-            appleCount++;
-            document.getElementById('apple-count').innerText = appleCount;
-
-            if (!appleImage) {
-                appleImage = document.createElement('img');
-                appleImage.src = 'snow-white-apple-gif.gif';
-                appleImage.alt = 'Apple Image';
-                document.getElementById('apple-images').appendChild(appleImage);
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        document.getElementById('showPassword').addEventListener('change', function() {
+            var passwordField = document.getElementById('password');
+            
+            // 根據勾選框的選擇來切換密碼顯示
+            if (this.checked) {
+                passwordField.type = 'text';  // 顯示密碼
+            } else {
+                passwordField.type = 'password';  // 隱藏密碼
             }
-        }
+        });
+
+
     </script>
 </body>
+
 </html>
